@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superliga Rosarina de Básquet</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg navbar-dark bg-custom-blue">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center" href="#">
+                <img src="./assets/logo-rosarina.png" alt="Logo" class="logo">
+                Superliga Rosarina
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/tabla.html">Tabla de Posiciones</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/fixture.html">Fixture</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/equipos.html">Equipos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./pages/historial.html">Historial</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <div class="row g-4">
+            <div class="col-lg-8">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4 bg-light rounded-3 border">
+                        <h2 class="mb-3">🏀 Superliga de Básquet de Rosario</h2>
+                        <h3 class="h5 text-muted mb-4">Toda la información del torneo en un solo lugar</h3>
+                        <p>Bienvenidos al sitio dedicado a la Superliga de Básquet de Rosario, donde podés seguir de cerca la competencia más importante del básquet local.</p>
+                        <p>Encontrá la tabla de posiciones actualizada, el fixture y los resultados de cada fecha, información sobre los equipos participantes y el historial de campeones del certamen.</p>
+                        <hr class="my-4">
+                        <p class="small text-muted">⚠️ Aclaración: Este sitio no pertenece ni está afiliado a la Asociación Rosarina de Básquet ni a ningún medio oficial relacionado con la organización del campeonato. Toda la información aquí presentada tiene fines informativos y recreativos.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card border-primary shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        Último campeón
+                    </div>
+                    <img src="./assets/provincial.jpg" class="card-img-top p-3 w-50 mx-auto" alt="Escudo Club Atlético Provincial">
+                    <div class="card-body text-center d-flex flex-column justify-content-center">
+                        <h5 class="card-title">Club Atlético Provincial</h5>
+                        <p class="card-text">Se consagró campeón de la Superliga Rosarina de Básquet 2024 tras vencer en la final al club Sportsmen Unidos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="py-4 mt-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-3 mb-md-0">
+                    <h5 class="mb-3">Superliga Rosarina</h5>
+                    <ul class="list-unstyled d-flex justify-content-center gap-3 flex-wrap">
+                        <li><a href="#" class="text-white text-decoration-none">Inicio</a></li>
+                        <li><a href="./pages/tabla.html" class="text-white text-decoration-none">Tabla</a></li>
+                        <li><a href="./pages/fixture.html" class="text-white text-decoration-none">Fixture</a></li>
+                        <li><a href="./pages/equipos.html" class="text-white text-decoration-none">Equipos</a></li>
+                        <li><a href="./pages/historial.html" class="text-white text-decoration-none">Historial</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="./assets/rosarina.png" alt="Logo Asociación" class="footer-logo">
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+
+</html>
