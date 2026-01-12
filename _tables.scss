@@ -1,0 +1,11 @@
+.escudo-chico {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+}
+
+.resultado-partido {
+    @include flex-centro;
+    width: 100%;
+    min-width: 80px;
+}

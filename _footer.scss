@@ -1,0 +1,13 @@
+footer {
+    background-color: darken($azul-principal, 5%);
+    color: $blanco;
+
+    h5 {
+        color: $blanco !important;
+    }
+
+    .footer-logo {
+        max-width: 150px;
+        height: auto;
+    }
+}

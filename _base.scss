@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: $fuente-texto;
+    color: $texto-oscuro;
+    background-color: $blanco;
+}
+
+%titulo-estilo {
+    font-family: $fuente-titulo;
+    color: $azul-principal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @extend %titulo-estilo;
+}
+
+.bg-custom-blue {
+    background-color: $azul-principal !important;
+}
+
+.text-custom-blue {
+    color: $azul-principal !important;
+}
+
+.me-2-custom {
+    margin-right: 0.5rem;
+}
+
+.ms-2-custom {
+    margin-left: 0.5rem;
+}
