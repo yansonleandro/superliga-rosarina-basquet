@@ -1,0 +1,74 @@
+.table {
+    transition: all 0.3s ease;
+    border-collapse: collapse;
+    
+    tbody tr {
+        transition: background-color 0.3s ease, box-shadow 0.3s ease;
+        
+        &:hover {
+            background-color: rgba(1, 44, 122, 0.05);
+            box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.05);
+        }
+    }
+    
+    thead {
+        position: sticky;
+        top: 0;
+        z-index: 10;
+        background-color: #012C7A;
+        
+        th {
+            font-weight: 700;
+            border-bottom: 3px solid rgba(255, 255, 255, 0.3);
+            vertical-align: middle;
+            transition: transform 0.3s ease;
+            background-color: #012C7A;
+            color: white;
+            
+            @media (max-width: 768px) {
+                font-size: 0.85rem;
+                padding: 0.5rem 0.25rem;
+            }
+        }
+    }
+    
+    td {
+        vertical-align: middle;
+        transition: color 0.3s ease;
+        
+        @media (max-width: 768px) {
+            padding: 0.5rem 0.25rem;
+            font-size: 0.9rem;
+        }
+    }
+}
+
+.escudo-chico {
+    height: 30px;
+    width: auto;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+    filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+    
+    &:hover {
+        transform: scale(1.2) rotate(5deg);
+    }
+    
+    @media (max-width: 768px) {
+        height: 25px;
+    }
+}
+
+.resultado-partido {
+    @include flex-centro;
+    width: 100%;
+    min-width: 80px;
+    font-weight: 600;
+    color: $azul-principal;
+    transition: all 0.3s ease;
+    
+    @media (max-width: 768px) {
+        font-size: 0.9rem;
+        min-width: 60px;
+    }
+}

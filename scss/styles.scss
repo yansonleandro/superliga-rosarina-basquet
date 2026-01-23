@@ -2,12 +2,12 @@
 @import 'abstracts/mixins';
 @import 'base/base';
 @import 'components/navbar';
-@import 'components/footer';
 @import 'components/cards';
 @import 'components/tables';
+@import 'components/footer';
 
 @each $nombre, $color in $equipos {
     .borde-#{$nombre} {
-        border-left: 4px solid $color !important;
+        border-left: 4px solid $color;
     }
 }

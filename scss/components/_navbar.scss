@@ -1,0 +1,63 @@
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    
+    &.scrolled {
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+    }
+    
+    .navbar-brand {
+        font-weight: 700;
+        font-size: 1.4rem;
+        transition: transform 0.3s ease;
+        
+        &:hover {
+            transform: scale(1.05);
+        }
+        
+        .logo {
+            height: 40px;
+            width: auto;
+            margin-right: 10px;
+            transition: transform 0.3s ease;
+            
+            &:hover {
+                transform: rotate(-5deg);
+            }
+        }
+    }
+    
+    .nav-link {
+        position: relative;
+        font-weight: 500;
+        transition: color 0.3s ease;
+        
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #FFFFFF;
+            transition: width 0.3s ease;
+        }
+        
+        &:hover {
+            color: #FFFFFF;
+            
+            &::after {
+                width: 100%;
+            }
+        }
+        
+        &.active {
+            color: #FFFFFF;
+            font-weight: 600;
+            
+            &::after {
+                width: 100%;
+            }
+        }
+    }
+}

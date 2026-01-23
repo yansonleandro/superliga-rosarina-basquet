@@ -1,0 +1,62 @@
+footer {
+    background: linear-gradient(135deg, darken($azul-principal, 5%) 0%, darken($azul-principal, 8%) 100%);
+    color: $blanco;
+    margin-top: auto;
+    border-top: 4px solid rgba(255, 255, 255, 0.1);
+    transition: all 0.3s ease;
+
+    h5 {
+        color: $blanco;
+        font-weight: 700;
+        transition: transform 0.3s ease;
+    }
+    
+    a {
+        color: rgba(255, 255, 255, 0.8);
+        transition: all 0.3s ease;
+        position: relative;
+        
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #FFFFFF;
+            transition: width 0.3s ease;
+        }
+        
+        &:hover {
+            color: #FFFFFF;
+            
+            &::before {
+                width: 100%;
+            }
+        }
+    }
+
+    .footer-logo {
+        max-width: 150px;
+        height: auto;
+        transition: transform 0.3s ease, filter 0.3s ease;
+        filter: brightness(1.1);
+        
+        &:hover {
+            transform: scale(1.1) rotate(5deg);
+        }
+        
+        @media (max-width: 768px) {
+            max-width: 120px;
+        }
+    }
+    
+    .footer-section {
+        animation: fadeInUp 0.6s ease-out;
+        animation-fill-mode: both;
+        
+        &:nth-child(1) { animation-delay: 0.1s; }
+        &:nth-child(2) { animation-delay: 0.2s; }
+        &:nth-child(3) { animation-delay: 0.3s; }
+    }
+}
